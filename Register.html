@@ -1,0 +1,167 @@
+<!-- This is an HTML page for user registration on the TGS website -->
+<!DOCTYPE html>
+<html lang="en-US">
+
+   <!-- Head section containing metadata and linking to a CSS file -->
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Register for TGS">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Register | TGS</title>
+      <link rel="stylesheet" type="text/css" href="Register.css">
+   </head>
+
+   <style>
+      /* General styles */
+/* Defines the font family for the entire webpage */
+body {
+  font-family: Noto;
+}
+
+/* Heading styles */
+/* Defines the font size, alignment, and color for the various heading tags */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: GoldenRod;
+}
+
+h2, h4 {
+  font-size: 1.5em;
+  text-align: center;
+  color: GoldenRod;
+}
+
+/* Form styles */
+/* Defines the alignment, margins, and padding for the form element, and the styles for the form labels and input fields */
+form {
+  margin: auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid GoldenRod;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+/* Defines the styles for the various types of buttons */
+button[type="submit"], button[type="button"], .cancelbtn {
+  background-color: GoldenRod;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover, .cancelbtn:hover {
+  background-color: #e8bd01;
+}
+
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Table styles */
+/* Defines the width of the table */
+table {
+  width: 100%;
+}
+
+/* Footer styles */
+/* Defines the font size, alignment, and color for the footer element */
+footer {
+  font-size: 1.5em;
+  text-align: center;
+  color: GoldenRod;
+  margin-top: 50px;
+}
+   </style>
+   <!-- Body section containing the registration form -->
+   <body>
+
+      <!-- Header section with TGS branding -->
+      <header> <h1>TGS</h1> </header>
+
+      <!-- Horizontal line -->
+      <hr>
+
+      <!-- Main section containing the registration form -->
+      <main>
+         <section>
+            <h2>Create Account</h2>
+
+            <!-- Registration form with input fields and buttons -->
+            <form action="submit-form.php">
+               <table>
+                  <tr>
+                     <td>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+                     </td>
+                     <td>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label for="phonenumber">Phone Number:</label>
+                        <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter your phone number" required>
+                     </td>
+                     <td>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label for="psw">Password:</label>
+                        <input type="password" id="psw" name="psw" placeholder="Enter a password of at least 5 characters" minlength="5" required>
+                     </td>
+                     <td>
+                        <label for="psw2">Confirm Password:</label>
+                        <input type="password" id="psw2" name="psw2" placeholder="Re-enter your password" minlength="5" required>
+                     </td>
+                  </tr>
+               </table>
+               <table>
+                  <tr>
+                     <td>
+                        <button type="submit">Create Account</button>
+                        <button type="reset">Clear</button>
+                     </td>
+                  </tr>
+               </table>
+               <table>
+                  <tr>
+                     <td>
+                        <p>Already have an account? <a href="login.html">Log in</a></p>
+                     </td>
+                  </tr>
+               </table>
+            </form>
+         </section>
+      </main>
+
+      <!-- Footer section with TGS branding and copyright information -->
+      <footer> <p>&copy; TGS 2023</p> </footer>
+   </body>
+</html>

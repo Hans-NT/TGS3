@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+        <head>
+         <meta charset="UTF-8" />
+         <title>Checkout | TGS</title>
+         <link rel="stylesheet" type="text/css" href="Checkout.css" />
+      </head>
+      
+      <style>
+         /* Reset all margins, paddings, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent font family, background color, and text color for the whole document */
+body {
+  font-family: Noto;
+  color: GoldenRod;
+}
+
+/* Center the main heading */
+main h1 {
+  text-align: center;
+}
+
+/* Style table headers */
+table th {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Style form inputs */
+form input[type=text], form input[type=email], form input[type=tel], form input[type=number], form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style form buttons */
+form button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style form button on hover */
+form button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style form container */
+form {
+  width: 80%;
+  margin: auto;
+}
+      </style>
+      <!-- Body section containing the registration form -->
+      <body>
+         
+         <!-- Header section with TGS branding -->
+         <header> <h1>TGS</h1> </header>
+   
+         <!-- Horizontal line -->
+         <hr>
+   
+         <!-- Main section containing the registration form -->
+         <main>
+            <h2>Choose a Payment Method</h2>
+   
+            <!-- Credit/Debit card payment section -->
+            <section>
+               <h3>Credit/Debit Card</h3>
+               <p>Pay with your Visa, Mastercard, or American Express card.</p>
+               <form>
+                  <label for="card-number">Card Number:</label>
+                  <input type="text" id="card-number" placeholder="Number" name="card-number" />
+                  <br />
+                  <label for="card-name">Name on Card:</label>
+                  <input type="text" id="card-name" placeholder="Name" name="card-name" />
+                  <br />
+                  <label for="card-expiry">Expiration Date:</label>
+                  <select name="card-expiry-month" id="card-expiry-month">
+                     <option value="">Month</option>
+                     <option value="01">January</option>
+                     <option value="02">February</option>
+                     <option value="03">March</option>
+                     <option value="04">April</option>
+                     <option value="05">May</option>
+                     <option value="06">June</option>
+                     <option value="07">July</option>
+                     <option value="08">August</option>
+                     <option value="09">September</option>
+                     <option value="10">October</option>
+                     <option value="11">November</option>
+                     <option value="12">December</option>
+                  </select>
+                  /
+                  <select name="card-expiry-year" id="card-expiry-year">
+                     <option value="">Year</option>
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                     <option value="2025">2025</option>
+                     <option value="2026">2026</option>
+                     <option value="2027">2027</option>
+                     <option value="2028">2028</option>
+                     <option value="2029">2029</option>
+                     <option value="2030">2030</option>
+                  </select>
+                  <br />
+                  <label for="card-cvv">CVV:</label>
+                  <input type="text" id="card-cvv" placeholder="CVV" name="card-cvv" />
+               </form>
+            </section>
+   
+            <!-- PayPal payment section -->
+            <section>
+               <h3>PayPal</h3>
+               <form>
+                  <label for="paypal-username">Username:</label>
+                  <input type="text" id="paypal-username" placeholder="Enter Username" name="paypal-username" required />
+                  <br />
+                  <label for="paypal-password">Password:</label>
+                  <input type="password" id="paypal-password" placeholder="Enter Password" name="paypal-password" required />
+               </form>
+            </section>
+   
+            <!-- Venmo payment section -->
+            <section>
+               <h3>Venmo</h3>
+               <form>
+                  <label for="venmo-username">Username:</label>
+                  <input type="text" id="venmo-username" placeholder="Enter Username" name="venmo-username" required />
+                  <br />
+                  <label for="venmo-password">Password:</label>
+                  <input type="password" id="venmo-password" placeholder="Enter Password" name="venmo-password" required />
+               </form>
+            </section>
+         </main>
+   
+         <!-- Footer section with TGS branding and copyright information -->
+         <footer>
+            <center> <p>Â© TGS 2023</p> </center>
+         </footer>
+      </body>
+</html>
